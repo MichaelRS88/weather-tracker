@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Weather App that provides current weather information for a location.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Get the current weather condition (e.g., temperature, humidity, wind speed) for a specific location.
+- View the weather forecast available.
+- Search for weather information by city or location.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can try the live demo of the Weather App here: https://michaelrs88.github.io/weather-tracker/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js for the frontend.
+- OpenWeatherMap API for weather data.
+- CSS for styling.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Change to the project directory:
 
-### `npm run eject`
+    bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd weather-app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the required dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+Create a config file to store your API key. You can obtain an API key by signing up at OpenWeatherMap.
 
+Create a file named .env in the project directory:
+
+env
+
+REACT_APP_API_KEY=your_api_key_here (Your API Key)
+
+Start the development server:
+
+bash
+
+    npm start
+
+Usage
+
+    Open your web browser and go to http://localhost:3000.
+    Enter the name of a city or location in the search bar.
+    Click the "Search" button to get the current weather information.
+    View the weather forecast for the next few days.
+
+Author
+
+    Michael Rubriche
+    GitHub: MichaelRS88
+
+License
+
+This project is open source and available under the MIT License.
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
