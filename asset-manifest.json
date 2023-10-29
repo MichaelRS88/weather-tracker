@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/weather-tracker/static/css/main.ee2fffac.css",
+    "main.js": "/weather-tracker/static/js/main.842d0c74.js",
+    "static/media/sunset-jpn.jpg": "/weather-tracker/static/media/sunset-jpn.b96aedcb6516b707e855.jpg",
+    "index.html": "/weather-tracker/index.html",
+    "main.ee2fffac.css.map": "/weather-tracker/static/css/main.ee2fffac.css.map",
+    "main.842d0c74.js.map": "/weather-tracker/static/js/main.842d0c74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2fffac.css",
+    "static/js/main.842d0c74.js"
+  ]
+}
