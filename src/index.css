@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Changed the font to 'Poppins' */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh; /* Set to 100vh to fill the viewport height */
+  position: relative;
+  background: url('./Assets/sunset-jpn.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+
+.app:before {
+  content: '';
+  background: url('./Assets/sunset-jpn.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 5%; /* Adjusted the top margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the top section text */
+}
+
+.app .top p, .app .top h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to individual text elements */
+}
+
+.app .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+  
+}
+
+.app .bottom {
+  display: flex;
+  flex-direction: row; /* Set the direction to left-to-right */
+  align-items: center; /* Center the items vertically */
+  justify-content: space-around; /* Space items evenly along the horizontal axis */
+  width: 100%;
+  margin: 1rem auto; /* Adjust margin for positioning */
+  padding: 8rem; /* Adjust padding to your preference */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bottom {
+  display: flex; /* Use flex display to arrange items horizontally */
+  justify-content: space-between; /* Space items evenly along the horizontal axis */
+  width: 100%;
+  padding: 15rem; /* Adjust the padding as needed */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.city-container {
+  display: flex; /* Use flex display to arrange items horizontally */
+  justify-content: space-between; /* Space items evenly along the horizontal axis */
+  padding: 1rem; /* Adjust the padding as needed */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.city-container > div {
+  text-align: center; /* Center the text within each item */
+  flex: 1; /* Allow items to grow equally to fill the available space */
+  padding: 1rem; /* Add padding to separate the items */
+}
+
+
+
+.bold {
+  font-weight: 700;
+}
